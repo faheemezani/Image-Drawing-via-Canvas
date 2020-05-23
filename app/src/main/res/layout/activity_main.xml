@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <io.github.faheemezani.drawdimensions.DimensionGLView
+            android:id="@+id/dimensionGlSurface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <jp.co.cyberagent.android.gpuimage.GLTextureView
+            android:id="@+id/gpuimageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:gpuimage_show_loading="false"
+            app:gpuimage_surface_type="texture_view"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="bottom"
+       android:orientation="horizontal" >
+
+        <Button
+           android:id="@+id/btTwoByTwo"
+           android:layout_width="0dp"
+           android:layout_height="?actionBarSize"
+           android:layout_weight="1"
+           android:text="@string/twobytwo"
+           android:textAllCaps="false" />
+
+        <Button
+           android:id="@+id/btThreeByThree"
+           android:layout_width="0dp"
+           android:layout_height="?actionBarSize"
+           android:layout_weight="1"
+           android:text="@string/threebythree"
+           android:textAllCaps="false" />
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btPosterizeFilter"
+            android:layout_width="0dp"
+            android:layout_height="?actionBarSize"
+            android:layout_weight="1"
+            android:text="@string/posterize"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btVignetteFilter"
+            android:layout_width="0dp"
+            android:layout_height="?actionBarSize"
+            android:layout_weight="1"
+            android:text="@string/vignette"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btLaplacianFilter"
+            android:layout_width="0dp"
+            android:layout_height="?actionBarSize"
+            android:layout_weight="1"
+            android:text="@string/laplacian"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</LinearLayout>

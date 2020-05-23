@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Drawing Image Dimensions</string>
+
+    <!-- [ MainActivity ] -->
+    <!-- Buttons -->
+    <string name="twobytwo">2 x 2</string>
+    <string name="threebythree">3 x 3</string>
+    <string name="posterize">Posterize</string>
+    <string name="vignette">Vignette</string>
+    <string name="laplacian">Laplacian</string>
+
+</resources>
